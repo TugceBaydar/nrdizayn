@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- This sets the language that your characters are in -->
+		<meta charset="utf-8">
+		<!-- This ensures that your media queries work -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- This is what appears in the tab of your browser page -->
+		<title></title>
+
+		<!-- This makes the bootstrap css work -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- This connects my CSS external stylesheet to the index.html -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+ <!-- navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">
+		<img src="img/logo.png" width="250px;">
+		</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">ANASAYFA <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="kurumsal.html">KURUMSAL</a>
+	      </li>
+				<li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="fuarStand.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          FUAR STAND
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <a class="dropdown-item" href="#">AHSAP STANDLAR</a>
+	          <a class="dropdown-item" href="#">MAKSIMA STANDLAR</a>
+	          <a class="dropdown-item" href="#">MODULER STANDLAR</a>
+	        </div>
+	      </li>
+				<li class="nav-item">
+				 <a class="nav-link" href="#">GALERI</a>
+			 </li>
+			 <li class="nav-item">
+				 <a class="nav-link" href="#">REFERANSLAR</a>
+			 </li>
+			 <li class="nav-item">
+				 <a class="nav-link" href="#">ILETISIM</a>
+			 </li>
+
+	    </ul>
+	  </div>
+	</nav>
+
+         <div id="containerIletisim">
+           <h3>Ön Talep Formu</h3>
+           <h2>Stand ve dekor talebiniz ile ilgili aşağıdaki formu doldurunuz.</h2>
+           <div class="form row">
+             <div class="formLeft col-sm-6">
+               <h4>Adı Soyadı: *</h4>
+               <h4>Firma Adı:</h4>
+               <h4>Telefon: *</h4>
+               <h4>E-Posta: *</h4><br>
+               <h4>Mesajınız: *</h4>
+             </div>
+             <div class="formRight col-sm-6">
+               <input></input>
+               <input></input>
+               <input></input>
+               <input></input>
+               <textarea name="name" rows="6" cols="48"></textarea>
+               <button type="button">Gonder</button>
+             </div>
+           </div>
+            <div class="info">
+
+              <h1>Bize Ulaşın</h1>
+              <p><b>Telefon:</b> <span>0216 324 04 41</span></p>
+              <p><b>E-Posta:</b> musa @nrdizayn.com</p>
+              <p><b>Hesapno:</b> <a>nrevent.hesapno.com</a></p>
+              <p><b>Adres:</b> Esatpaşa Mahallesi. Aşık Veysel Cad. No:13/C Ataşehir / İstanbul</p>
+            </div>
+         </div>
+
+
+    <!-- footer -->
+		<!-- <div id="footer">
+			<h1>Size özel bir stand tasarım çalışması için lütfen talep formumuzu doldurun</h1>
+			<button><a>STAND TALEP FORMU</a></button>
+		</div> -->
+		<div id="footer1" style="margin-top:0px;">
+			<h1>NR Organizasyon Tanıtım Hizmetleri Limited Şirketi ©</h1>
+			<a href="#">www.nrdizayn.com</a>
+		</div>
+		<!-- This gives access to the jquery library -->
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.js"
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous"></script>
+
+		<!-- Popper is required for bootstrap 4 JS functionality -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+		<!-- This makes bootstrap 4 JS work -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+		<!-- This connects my JS external file to the index.html -->
+		<script src="js/main.js" type="text/javascript"></script>
+
+	</body>
+</html>
