@@ -1,6 +1,7 @@
 body {
   font-family: 'Raleway',sans-serif;
   font-weight: 300;
+
 }
 #carouselExampleControls {
   width:100%;
@@ -57,6 +58,14 @@ body {
 #buttons {
   z-index: -1;
   float:right;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-right: 5%;
+}
+
+#buttons > a > img {
+
+  width:30px;
 }
 
 #middlePart {
@@ -345,12 +354,40 @@ padding-left: 15px;
 }
 
 /* galeri */
-
 #containerGaleri {
-  margin-top: 15%;
+  width:100%;
+}
+
+
+#Galeri {
+  margin-top: 10%;
   padding-left: 10%;
   margin-right: auto;
   width:100%;
   background-color: #dee2e62b;
   margin-bottom: 5%;
+  padding-top: 5%;
+}
+
+#Galeri > .row > .col-sm-3 > img
+{
+width:370px;
+height: 200px;
+display:inline;
+padding-right: 30%;
+margin-bottom: 30%;
+background-size: cover;
+transition: transform 5s;
+
+}
+
+#Galeri > h1 {
+  font-size: 2.2rem;
+  color: #000;
+  line-height: 63px;
+  font-weight: 700;
+  border-left: 1px solid #000;
+  padding-left: 15px;
+  margin-bottom: 5%;
+
 }
