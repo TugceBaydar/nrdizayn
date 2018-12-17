@@ -343,6 +343,38 @@ padding-left: 15px;
 
 }
 
+#container > .right > .rightPart > img {
+  width:700px;
+  margin-top: 5%;
+
+}
+
+#container > .right > .rightPart {
+  margin-left: -15%;
+  margin-top: 5%;
+
+}
+
+#container > .right > .rightPart > .rH1 {
+  font-size: 2.2rem;
+  color: #000;
+  line-height: 63px;
+  font-weight: 700;
+  border-left: 1px solid #000;
+  padding-left: 15px;
+}
+
+#container > .right > .rightPart > .rP {
+  margin-top: 7%;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 1.8rem;
+  color:#00000091;
+  font-size: 1.2rem;
+}
 /* iletisim */
 
 #containerIletisim {
