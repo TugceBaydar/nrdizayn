@@ -100,11 +100,15 @@ body {
 
 
 #buttons {
-  z-index: -1;
-  float:right;
-  margin-top: 1%;
+  /* float:right; */
+  /* margin-top: 1%;
   margin-bottom: 2%;
-  margin-right: 5%;
+  margin-right: 5%; */
+  position: absolute;
+  right:5%;
+  margin-bottom: 2%;
+  z-index: 100;
+  margin-top: 1%;
 }
 
 #buttons > a > img {
@@ -299,7 +303,7 @@ padding-left: 15px;
 }
 
 #container {
-  margin-top: 25%;
+  margin-top: 5%;
   padding-left: 10%;
   margin-right: auto;
   width:100%;
