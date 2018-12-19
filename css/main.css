@@ -203,6 +203,21 @@ body {
   transform : scale(0.95);
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.flex-container > div > img {
+
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
 #footer {
   font-size: 18pt;
   text-align: center;
@@ -528,7 +543,9 @@ height: auto;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
+  height:auto;
+  max-width:100%;
 }
 
 /* The Close Button */
@@ -596,11 +613,53 @@ transform-origin: 10% 90%;
 /* responsiveness */
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 750px) {
   #buttons {
     display:none;
   }
   .carousel-inner {
     height: 200px;
+  }
+  #footer {
+    display: none;
+  }
+  #footer1{
+    display:none;
+  }
+  #images {
+    display: block;
+  }
+  #middlePartKurumsal {
+    margin-top: 25%;
+  }
+  #container {
+    margin-top: 25%;
+    padding-left: 3%;
+  }
+  #container .right {
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+  }
+  #containerGaleri {
+    margin-top: 25%;
+  }
+  #containerReferanslar{
+    margin-top: 25%;
+  }
+  #containerIletisim .info {
+    display: none;
+  }
+  #containerIletisim{
+    margin-top: 40%;
+    margin-left: 40px;
+    margin-right: auto;
+    padding-right: 20px;
+
+  }
+  #navbarNavDropdown {
+   margin-left: -90px;
+   margin-top: 50px;
+   background-color: white;
   }
 }
