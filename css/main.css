@@ -758,8 +758,11 @@ margin-bottom: 20%;
 vertical-align: middle;
 display: inline-block;
 transform-origin: 10% 90%;
-}
 
+}
+#Referanslar > .row > .col-sm-3 > img:hover {
+  transform: scale(0.95);
+}
 
 #Referanslar > h1 {
   font-size: 1.9rem;
