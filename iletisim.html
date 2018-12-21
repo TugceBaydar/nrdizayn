@@ -18,14 +18,14 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<div id="buttons" style="margin-top:-200px;">
+		<div id="buttons">
    	 <a class="buttons1" href="En/iletisim.html"><img src="img/english.png"></a>
    	 <a class="buttons1" href="#"><img src="img/turkish.png"></a>
    	</div>
  <!-- navbar -->
  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: url(http://d25tea7qfcsjlw.cloudfront.net/3890/p/28824.png);">
  <a class="navbar-brand" href="#">
- <img id="logo" src="http://d25tea7qfcsjlw.cloudfront.net/3890/modul/94654/1509.png" style="  padding-left: 20px;">
+ 	 <a href="index.html">	<img class="logoIletisim" id="logo" src="http://d25tea7qfcsjlw.cloudfront.net/3890/modul/94654/1509.png" style="  padding-left: 20px;" ></a>
  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -74,11 +74,13 @@
                <h4>Mesajınız: *</h4>
              </div>
              <div class="formRight col-sm-6">
-               <input type="text" name="name" required></input>
-               <input type="text" name="name"></input>
-               <input type="" name="name" required></input>
-               <input type="email" name="name" required></input>
-               <textarea name="name" rows="4" cols="52" required></textarea>
+							 <form method="post" action="gonder.php">
+		               <input type="text" name="name" required></input>
+		               <input type="text" name="company"></input>
+		               <input type="" name="name" required></input>
+		               <input type="email" name="from" required></input>
+		               <textarea name="message" rows="4" cols="52" required></textarea>
+						   </form>
                <button type="button">Gonder</button>
              </div>
            </div>
@@ -87,7 +89,7 @@
               <h1>Bize Ulaşın</h1>
               <p><strong>Telefon:</strong> <span class="iltsm">0216 324 04 41</span></p>
               <p><strong>E-Posta:</strong><a style="color:#750353;"> musa @nrdizayn.com</a></p>
-              <p><strong>Hesapno:</strong> <a href="">nrevent.hesapno.com</a></p>
+              <p><strong>Hesapno:</strong> <a href="http://nrevent.hesapno.com">nrevent.hesapno.com</a></p>
               <p><strong>Adres:</strong> <span class="iltsm" >Esatpaşa Mahallesi. Aşık Veysel Cad. No:13/C Ataşehir / İstanbul</span></p>
             </div>
          </div>

@@ -17,12 +17,12 @@ body {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0px;
   z-index: 1;
   width: 100%;
-  margin-top: 3%;
+  /* margin-top: 3%; */
   height:85px;
 }
 
@@ -50,8 +50,12 @@ body {
   display: none;
 }
 .dropdown-menu {
-  background-color: #000;
+  background-color: #090808b3;
 }
+.dropdown-menu .show {
+  background-color: #090808b3;
+}
+
 .dropdown-item {
   color: #fff;
   font-size: 1.1rem;
@@ -69,12 +73,10 @@ body {
   font-weight: 700;
   font-size: 0.9rem;
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -83,7 +85,6 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   color: white;
   padding: 12px 16px;
@@ -91,13 +92,11 @@ body {
   display: block;
   background-color: black;
 }
-
 .dropdown-content a:hover {
   /* background-color: #ddd; */
 /* } */
 
 /* .dropdown:hover .dropdown-content {display: block;}
-
 .dropdown:hover .dropbtn {
   /* background-color: #3e8e41; */
 /* } */
@@ -110,9 +109,10 @@ body {
   margin-right: 5%; */
   position: absolute;
   right:5%;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
   z-index: 100;
-  margin-top: 1%;
+  /* margin-top: 1%; */
+  top:20px;
 }
 
 #buttons > a > img {
@@ -129,8 +129,8 @@ body {
 
 }
 #containerIndex {
-    background-color: #343a400a;
-    margin-bottom: 3%;
+  background-color: #343a400a;
+  margin-bottom: 3%;
 }
 
 #middlePart > h1 {
@@ -138,8 +138,8 @@ body {
   color: #000;
   line-height: 63px;
   font-weight: 700;
-  border-left: 1px solid #000;
-  padding-left: 15px;
+  /* border-left: 1px solid #000; */
+  /* padding-left: 15px; */
 }
 
 #middlePart > p {
@@ -183,9 +183,12 @@ body {
 }
 
 #images {
- width:20%;
+
  margin-left: 10%;
  display: flex;
+ width: 1250px;
+ margin-right: 144px;
+
 }
 
 #images > .row > .col-sm-4 > img {
@@ -201,6 +204,21 @@ body {
 
 #images > .row > .col-sm-4 > img:hover {
   transform : scale(0.95);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.flex-container > div > img {
+
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
 
 #footer {
@@ -281,8 +299,8 @@ font-size: 2.2rem;
 color: #000;
 line-height: 63px;
 font-weight: 700;
-border-left: 1px solid #000;
-padding-left: 15px;
+/* border-left: 1px solid #000; */
+/* padding-left: 15px; */
 }
 
 #middlePartKurumsal > #inner > p {
@@ -332,8 +350,8 @@ padding-left: 15px;
   color: #000;
   line-height: 63px;
   font-weight: 700;
-  border-left: 1px solid #000;
-  padding-left: 15px;
+  /* border-left: 1px solid #000; */
+  /* padding-left: 15px; */
 }
 #container > .right > h2 {
   margin-top: 5%;
@@ -373,8 +391,8 @@ padding-left: 15px;
   color: #000;
   line-height: 63px;
   font-weight: 700;
-  border-left: 1px solid #000;
-  padding-left: 15px;
+  /* border-left: 1px solid #000; */
+  /* padding-left: 15px; */
 }
 
 #container > .right > .rightPart > .rP {
@@ -419,7 +437,7 @@ padding-left: 15px;
   display:block;
 }
 
-.formRight > input {
+.formRight > form >input {
   width:70%;
   margin-bottom: 2%;
 }
@@ -435,8 +453,8 @@ padding-left: 15px;
   color: #000;
   line-height: 63px;
   font-weight: 700;
-  border-left: 2px solid #000;
-  padding-left: 15px;
+  /* border-left: 2px solid #000; */
+  /* padding-left: 15px; */
 }
 #containerIletisim> .info {
   padding-bottom: 5%;
@@ -492,8 +510,8 @@ height: auto;
   color: #000;
   line-height: 63px;
   font-weight: 700;
-  border-left: 1px solid #000;
-  padding-left: 15px;
+  /* border-left: 1px solid #000; */
+  /* padding-left: 15px; */
   margin-bottom: 5%;
 
 }
@@ -524,11 +542,12 @@ height: auto;
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
+  display: block;
   width: 80%;
+  max-width: 700px;
+
+
 }
 
 /* The Close Button */
@@ -546,7 +565,171 @@ height: auto;
   cursor: pointer;
 }
 
+#myImg {
+  /* border-radius: 5px; */
+  cursor: pointer;
+  transition: 0.3s;
+}
 
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+/* #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+} */
+
+/* Add Animation */
+/* .modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)}
+  to {transform: scale(1)}
+} */
+
+/* The Close Button */
+/* .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+#myImg {
+  /* border-radius: 5px; */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)}
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
 /* referanslar */
 
 #containerReferanslar {
@@ -579,16 +762,19 @@ margin-bottom: 20%;
 vertical-align: middle;
 display: inline-block;
 transform-origin: 10% 90%;
-}
 
+}
+#Referanslar > .row > .col-sm-3 > img:hover {
+  transform: scale(0.95);
+}
 
 #Referanslar > h1 {
   font-size: 1.9rem;
   color: #000;
   line-height: 63px;
   font-weight: 700;
-  border-left: 1px solid #000;
-  padding-left: 15px;
+  /* border-left: 1px solid #000; */
+  /* padding-left: 15px; */
   margin-bottom: 5%;
 
 }
@@ -596,11 +782,167 @@ transform-origin: 10% 90%;
 /* responsiveness */
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 750px) {
   #buttons {
     display:none;
   }
   .carousel-inner {
     height: 200px;
   }
+  #footer {
+    width:100%;
+  }
+  #footer > button {
+    width:70%;
+  }
+  #footer1{
+    /* display:none; */
+  }
+  /* #images {
+    display: block;
+  } */
+  #middlePartKurumsal {
+    margin-top: 25%;
+  }
+  #container {
+    margin-top: 25%;
+    padding-left: 3%;
+  }
+  #container .right {
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+  }
+  #containerGaleri {
+    margin-top: 25%;
+  }
+  #containerReferanslar{
+    margin-top: 25%;
+  }
+  #containerIletisim .info {
+    display: none;
+  }
+  #containerIletisim{
+    margin-top: 40%;
+    margin-left: 40px;
+    margin-right: auto;
+    padding-right: 20px;
+
+  }
+  #navbarNavDropdown {
+   margin-left: -90px;
+   margin-top: 50px;
+   background-color: white;
+  }
+}
+
+@media screen and (max-width:991px) {
+   #navbarNavDropdown {
+     width:280px;
+     background-color: #ffffffba;
+     margin-right: 200px;
+     margin-top: 50px;
+     position: absolute;
+     right: 20px;
+   }
+
+   .navbar-toggler{
+     margin-top: 20px;
+   }
+}
+
+@media screen and (max-width:380px) {
+  /* #logo {
+    width:60%;
+  } */
+  .navbar-toggler {
+    position: absolute;
+    right: 80px;
+    bottom: 30px;
+    z-index: -1;
+    left:300px;
+  }
+     #navbarNavDropdown {
+       width:280px;
+       background-color: #ffffffba;
+       margin-right: 200px;
+       margin-top: 50px;
+       position: absolute;
+       left: 100px;
+       right: auto;
+     }
+     #middlePart {
+       margin-right: auto;
+       margin-left: auto;
+       width: 50%;
+     }
+     #footer {
+       display: block;
+
+     }
+     /* #logo {
+      padding-left: 50px;
+      margin-left:-310px;
+     } */
+     .logoIletisim {
+       margin-left: -280px;
+       padding-left: 40px;
+     }
+     #containerIletisim {
+       margin-left: 0;
+
+     }
+     textarea {
+       width:250px;
+     }
+
+     #wdn {
+       width:200px;
+     }
+    .logoStands {
+    margin-left: -500px;
+     }
+     .logoIndex {
+       margin-left: -970px;
+     }
+     .dropdown-item {
+       display: none;
+     }
+     /* #images .row {
+       width: 150px;
+     } */
+     #images > .row > .col-sm-4 > img {
+
+       width: 256.812px;
+       height: 100px;
+     }
+
+     #col2 {
+       display: none;
+     }
+     #col3{
+       display: none;
+     }
+     #col1 {
+
+    width: 280px;
+    left: 50px;
+
+     }
+     .logoKurumsal {
+       padding-left: 20px;
+       margin-left: -280px;
+     }
+     .logoFuar {
+       margin-left: -280px;
+     }
+     .logoGaleri {
+       margin-left: -280px;
+     }
+     .logoRef {
+       margin-left: -290px;
+     }
+     .logoGaleri .logoGal {
+       margin-left: -100px;
+     }
 }

@@ -17,12 +17,12 @@ body {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0px;
   z-index: 1;
   width: 100%;
-  margin-top: 3%;
+  /* margin-top: 3%; */
   height:85px;
 }
 
@@ -109,9 +109,10 @@ body {
   margin-right: 5%; */
   position: absolute;
   right:5%;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
   z-index: 100;
-  margin-top: 1%;
+  /* margin-top: 1%; */
+  top:20px;
 }
 
 #buttons > a > img {
@@ -182,9 +183,12 @@ body {
 }
 
 #images {
- width:20%;
+
  margin-left: 10%;
  display: flex;
+ width: 1250px;
+ margin-right: 144px;
+
 }
 
 #images > .row > .col-sm-4 > img {
@@ -433,7 +437,7 @@ font-weight: 700;
   display:block;
 }
 
-.formRight > input {
+.formRight > form >input {
   width:70%;
   margin-bottom: 2%;
 }
@@ -538,13 +542,12 @@ height: auto;
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%;
-  height:auto;
-  max-width:100%;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+
+
 }
 
 /* The Close Button */
@@ -563,7 +566,7 @@ height: auto;
 }
 
 #myImg {
-  border-radius: 5px;
+  /* border-radius: 5px; */
   cursor: pointer;
   transition: 0.3s;
 }
@@ -642,7 +645,7 @@ height: auto;
 } */
 
 #myImg {
-  border-radius: 5px;
+  /* border-radius: 5px; */
   cursor: pointer;
   transition: 0.3s;
 }
@@ -670,6 +673,7 @@ height: auto;
   display: block;
   width: 80%;
   max-width: 700px;
+
 }
 
 /* Caption of Modal Image */
@@ -786,14 +790,17 @@ transform-origin: 10% 90%;
     height: 200px;
   }
   #footer {
-    display: none;
+    width:100%;
+  }
+  #footer > button {
+    width:70%;
   }
   #footer1{
-    display:none;
+    /* display:none; */
   }
-  #images {
+  /* #images {
     display: block;
-  }
+  } */
   #middlePartKurumsal {
     margin-top: 25%;
   }
@@ -844,15 +851,16 @@ transform-origin: 10% 90%;
    }
 }
 
-@media screen and (max-width:375px) {
-  #logo {
+@media screen and (max-width:380px) {
+  /* #logo {
     width:60%;
-  }
+  } */
   .navbar-toggler {
     position: absolute;
     right: 80px;
     bottom: 30px;
-    z-index: 200;
+    z-index: -1;
+    left:300px;
   }
      #navbarNavDropdown {
        width:280px;
@@ -865,7 +873,73 @@ transform-origin: 10% 90%;
      }
      #middlePart {
        margin-right: auto;
-      margin-left: auto;
-      width: 50%;
+       margin-left: auto;
+       width: 50%;
+     }
+     #footer {
+       display: block;
+
+     }
+     /* #logo {
+      padding-left: 50px;
+      margin-left:-310px;
+     } */
+     .logoIletisim {
+       margin-left: -280px;
+       padding-left: 40px;
+     }
+     #containerIletisim {
+       margin-left: 0;
+
+     }
+     textarea {
+       width:250px;
+     }
+
+     #wdn {
+       width:200px;
+     }
+    .logoStands {
+    margin-left: -500px;
+     }
+     .logoIndex {
+       margin-left: -970px;
+     }
+     .dropdown-item {
+       display: none;
+     }
+     /* #images .row {
+       width: 150px;
+     } */
+     #images > .row > .col-sm-4 > img {
+
+       width: 256.812px;
+       height: 100px;
+     }
+
+     #col2 {
+       display: none;
+     }
+     #col3{
+       display: none;
+     }
+     #col1 {
+
+    width: 280px;
+    left: 50px;
+
+     }
+     .logoKurumsal {
+       padding-left: 20px;
+       margin-left: -280px;
+     }
+     .logoFuar {
+       margin-left: -280px;
+     }
+     .logoGaleri {
+       margin-left: -280px;
+     }
+     .logoRef {
+       margin-left: -290px;
      }
 }
