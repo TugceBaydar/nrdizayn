@@ -465,47 +465,20 @@ font-weight: 700;
 }
 /* galeri */
 #containerGaleri {
-  width:100%;
-  padding-top: 2.5%;
-  margin-right: auto;
+
+  text-align: center;
+  margin-top: 100px;
+
+
 }
 
-
-#Galeri {
-  margin-top: 10%;
-  padding-left: 10%;
-  width:100%;
-  background-color: #FCFCFC;
-  margin-bottom: 5%;
-  padding-top: 5%;
-  background-size: cover;
-  padding-right: 10%;
+#containerGaleri > #Galeri {
+  margin-top: 200px;
+  padding-left: 80px;
+  margin-bottom: 100px;
 }
 
-#Galeri > .row > .col-sm-3 {
-  background-size: cover;
-}
-
-#Galeri > .row > .col-sm-3 > img
-{
-width:500px;
-background-size: cover;
-background-position: center;
-background-size: contain;
-transform-origin: 10% 90%;
-transition: all 3s cubic-bezier(.07,.455,.835,.995);
-vertical-align: middle;
-display: inline-block;
-max-width: 100%;
-height: auto;
- transition: transform 0.5s;
-}
-
-#Galeri > .row > .col-sm-3 > img:active {
-  transform:scale(1.10);
-}
-
-#Galeri > h1 {
+#containerGaleri > #Galeri > h1 {
   font-size: 1.9rem;
   color: #000;
   line-height: 63px;
@@ -513,17 +486,57 @@ height: auto;
   /* border-left: 1px solid #000; */
   /* padding-left: 15px; */
   margin-bottom: 5%;
+  text-align: left;
+  padding-left: 60px;
+}
+
+
+
+#containerGaleri > #Galeri > .grid-container > .grid-item{
+  width:300px;
+  height:226px;
+  background-size: contain;
 
 }
 
-#Galeri > .row > .col-sm-3 > .title {
+#containerGaleri > #Galeri > .grid-container > .grid-item > img {
+  background-size: contain;
+  max-width: 100%;
+  width:300px;
+
+}
+#containerGaleri > #Galeri > .grid-container > .grid-item > img:hover{
+  transform:scale(1.10);}
+
+#containerGaleri > #Galeri > .grid-container > .grid-item > .title{
   display: block;
   padding:10px;
   background-color: #97928e;
   font-size: .9rem;
   color: #fff;
-  margin-bottom: 6%;
+  margin-bottom: 15%;
+
 }
+
+#containerGaleri > #Galeri > .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* background-color: #2196F3; */
+  padding: 10px;
+  width:1300px;
+  grid-column-gap: 5px;
+  grid-row-gap: 50px;
+}
+
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
 
 /* The Modal (background) */
 .modal {
@@ -796,7 +809,8 @@ transform-origin: 10% 90%;
     width:70%;
   }
   #footer1{
-    /* display:none; */
+    padding-left: 30px;
+    padding-right: 30px;
   }
   /* #images {
     display: block;
@@ -855,6 +869,9 @@ transform-origin: 10% 90%;
   /* #logo {
     width:60%;
   } */
+   .navbar {
+     width:375px;
+   }
   .navbar-toggler {
     position: absolute;
     right: 80px;
@@ -876,9 +893,26 @@ transform-origin: 10% 90%;
        margin-left: auto;
        width: 50%;
      }
+     #images {
+       width:375px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 50%;
+     }
+     #images > .row {
+       display:block;
+       margin-top: 50px;
+       height: 1000px;
+     }
+
      #footer {
        display: block;
 
+     }
+     #footer1{
+       padding-left: 30px;
+       padding-right: 30px;
      }
      /* #logo {
       padding-left: 50px;
@@ -903,7 +937,7 @@ transform-origin: 10% 90%;
     margin-left: -500px;
      }
      .logoIndex {
-       margin-left: -970px;
+      margin-left: -310px;
      }
      .dropdown-item {
        display: none;
@@ -913,22 +947,48 @@ transform-origin: 10% 90%;
      } */
      #images > .row > .col-sm-4 > img {
 
-       width: 256.812px;
+      /* width:181px; */
        height: 100px;
+       padding-right:75px;
+       width:290px;
      }
 
+    #images > .row > #col1 > img {
+      margin-bottom: 110px;
+    }
      #col2 {
-       display: none;
+       display: block;
+       /* margin: 50px; */
+       /* margin-top: 60px; */
+
      }
+      #images > .row > #col2 > img {
+      margin-bottom: 110px;
+     }
+
      #col3{
-       display: none;
+       display: block;
+       /* margin: 50px; */
      }
+
+     #images > .row > #col3 > img {
+       margin-bottom: 110px;
+     }
+
+     #container > .right > h1 {
+       font-size: 1.9rem;
+       width: 200px;
+     }
+
+
      #col1 {
 
     width: 280px;
     left: 50px;
+    display: block;
 
      }
+
      .logoKurumsal {
        padding-left: 20px;
        margin-left: -280px;
@@ -937,9 +997,82 @@ transform-origin: 10% 90%;
        margin-left: -280px;
      }
      .logoGaleri {
-       margin-left: -280px;
+       margin-left: -110px;
+       margin-bottom: -30px;
      }
      .logoRef {
-       margin-left: -290px;
+       margin-left: -280px;
      }
+     #containerGaleri > #Galeri {
+
+      margin-bottom: 50px;
+      padding-left: 20px;
+
+     }
+      #containerGaleri > #Galeri > .grid-container {
+       display: block;
+       width:320px;
+       margin-left: 0;
+
+     }
+     #containerGaleri > #Galeri > .grid-container > .grid-item {
+       height: 250px;
+       margin-bottom: 20px;
+     }
+
+     #containerGaleri > #Galeri > h1 {
+       font-size: 1.4rem;
+       padding-left: 30px;
+     }
+     #middlePart > p {
+       font-size: 15pt;
+     }
+
+     #containerReferanslar > #Referanslar > .row {
+       padding-left: 50px;
+     }
+     #images > .row > .col-sm-4 {
+       margin-left: auto;
+       margin-right: auto;
+       width:100%;
+       position: static;
+
+
+     }
+     #images > .row{
+       margin-left: auto;
+       margin-right: auto;
+       width:100%;
+     }
+    #bodyIndex {
+      width:410px;
+    }
+    #bodyIndex > .navbar {
+      width:100%;
+    }
+    .footerIndex > h1 {
+      width:360px;
+      padding-left: 60px;
+
+    }
+    .footer1Index {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    #containerIletisim > .form > .formLeft {
+      width: 130px;
+    }
+    #containerIletisim > .form > .formRight {
+      width: 130px;
+    }
+    #containerIletisim > .form > .formRight > form > textarea {
+      padding-right: 30px;
+      width: 150px;
+    }
+    #bodyIletisim {
+      width: 420px;
+    }
+    #bodyIletisim .navbar {
+      width: 420px;
+    }
 }
