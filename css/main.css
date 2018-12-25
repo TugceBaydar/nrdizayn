@@ -797,7 +797,11 @@ transform-origin: 10% 90%;
 
 @media screen and (max-width: 750px) {
   #buttons {
-    display:none;
+
+    top: 55px;
+    left: 295px;
+    width: 70px;
+
   }
   .carousel-inner {
     height: 200px;
@@ -896,7 +900,7 @@ transform-origin: 10% 90%;
      #images {
        width:375px;
        display: block;
-       margin-left: auto;
+       margin-left: 70px;
        margin-right: auto;
        width: 50%;
      }
@@ -1052,7 +1056,7 @@ transform-origin: 10% 90%;
     }
     .footerIndex > h1 {
       width:360px;
-      padding-left: 60px;
+      padding-left: 40px;
 
     }
     .footer1Index {
@@ -1065,14 +1069,27 @@ transform-origin: 10% 90%;
     #containerIletisim > .form > .formRight {
       width: 130px;
     }
+    #containerIletisim > .form > .formRight > form > input {
+      width:180px;
+    }
     #containerIletisim > .form > .formRight > form > textarea {
       padding-right: 30px;
-      width: 150px;
+      width: 180px;
     }
     #bodyIletisim {
       width: 420px;
     }
     #bodyIletisim .navbar {
       width: 420px;
+    }
+    #containerIletisim > .form > .formRight >  button {
+      width:96px;
+    }
+    #buttons {
+
+      top: 55px;
+      left: 295px;
+      width: 70px;
+
     }
 }

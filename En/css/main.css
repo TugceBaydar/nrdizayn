@@ -797,7 +797,9 @@ transform-origin: 10% 90%;
 
 @media screen and (max-width: 750px) {
   #buttons {
-    display:none;
+    top: 55px;
+    left: 295px;
+    width: 70px;
   }
   .carousel-inner {
     height: 200px;
@@ -1067,7 +1069,7 @@ transform-origin: 10% 90%;
     }
     #containerIletisim > .form > .formRight > form > textarea {
       padding-right: 30px;
-      width: 150px;
+      width: 180px;
     }
     #bodyIletisim {
       width: 420px;
@@ -1084,6 +1086,9 @@ transform-origin: 10% 90%;
     #footer1 > #footer1H1 {
       padding-right: 40px;
     }
+    #containerIletisim > .form > .formRight > form > input {
+      width:180px;
+    }
     #containerIletisim > .form > .formLeft > h4 {
       font-size: 0.8rem;
     }
@@ -1092,5 +1097,15 @@ transform-origin: 10% 90%;
       }
       #Referanslar > .row > .col-sm-3 > img:hover {
         transform: scale(0.95);
+      }
+      #containerIletisim > .form > .formRight >  button {
+        width:96px;
+      }
+      #buttons {
+
+        top: 55px;
+        left: 295px;
+        width: 70px;
+
       }
 }
